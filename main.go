@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/parsnips/dupe/dupe"
+	"github.com/parsnips/dupe/util"
 )
 
 func main() {
-	var checker dupe.Dupe
-	checker = &dupe.RealDupeChecker{}
+	var checker util.Dupe
+	checker = &util.RealDupeChecker{}
 
 	fmt.Println(checker.IsDupe("a.txt", "b.txt"))
 }
